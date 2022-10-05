@@ -1,15 +1,15 @@
 <template>
   <div>
     <div v-if="cpiData.year1" class="py-1">
-      <span class="font-semibold">{{ year1 }}</span> CPI: {{ cpiData.year1 }}
+      <span class="font-semibold dark:text-dark-highlight">{{ year1 }}</span> <span class="dark:text-dark-description">CPI: {{ cpiData.year1 }}</span>
     </div>
-    <div v-else>
+    <div class="dark:text-dark-highlight" v-else>
       No data
     </div>
     <div v-if="cpiData.year2" class="py-1">
-      <span class="font-semibold">{{ year2 }}</span> CPI: {{ cpiData.year2 }}
+      <span class="font-semibold dark:text-dark-highlight">{{ year2 }}</span> <span class="dark:text-dark-description">CPI: {{ cpiData.year2 }}</span>
     </div>
-    <div v-else>
+    <div class="dark:text-dark-highlight" v-else>
       No data
     </div>
   </div>
